@@ -1,4 +1,10 @@
+.husky
+.vscode
 node_modules
+.npmignore
+.prettierignore
+.prettierrc.json
+.stylelintignore
+.stylelintrc.json
 TODO
-INSTRUCTIONS.md
-.DS_Store
+commitlint.config.js
