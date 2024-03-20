@@ -1,12 +1,3 @@
-# Changelog
-
-## [4.0.0] - 19-3-2024
-
-## [2.0.0] - 20-11-2022
-
-- Refactors the library. Individual modules have been passed to the entry/manifest file (main.scss).
-- Removes @use with - configuration
-
-## [1.0.0] - 11-11-2022
+## [1.0.0] - 20-03-2024
 
 Initial release
