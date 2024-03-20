@@ -1,5 +1,6 @@
 .husky
 .vscode
+node_modules
 .gitignore
 .npmignore
 .prettierignore
