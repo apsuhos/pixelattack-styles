@@ -1,50 +1,46 @@
-/* ==========================================================================
-   #CONTAINER
-   ========================================================================== */
+/* #CONTAINER */
 
 @use 'sass:map';
 @use '../tools/' as t;
 
 // Restricts content to the content size of the: desktop
-// The margins are set at spacing(large). For default baseline it is 24px (4px*6)
+// The margins are set at spacing(large). For default baseline, it is 24px (4px*6)
 // For default breakpoints it is 1016px (1064 - 24 - 24) - This is the default object
 .o-container {
-  @include t.clearfix;
-
   margin-inline: auto;
   max-width: calc(map.get(t.$mq-breakpoints, desktop) - t.spacing(large) * 2);
 }
 
 // Restricts content to the content size of the: tablet
-// The margins are set at spacing(base). For default baseline it is 16px (4px*4)
+// The margins are set at spacing(base). For default baseline, it is 16px (4px*4)
 // For default breakpoints it is 672px (704 - 16 - 16)
 .o-container--xsmall {
   max-width: calc(map.get(t.$mq-breakpoints, tablet) - t.spacing(base) * 2);
 }
 
 // Restricts content to the content size of the: l-tablet
-// The margins are set at spacing(large). For default baseline it is 24px (4px*6)
+// The margins are set at spacing(large). For default baseline, it is 24px (4px*6)
 // For default breakpoints it is 844px (892 - 24 - 24)
 .o-container--small {
   max-width: calc(map.get(t.$mq-breakpoints, l-tablet) - t.spacing(large) * 2);
 }
 
 // Restricts content to the content size of the: l-desktop
-// The margins are set at spacing(xlarge). For default baseline it is 36px (4px*9)
+// The margins are set at spacing(xlarge). For default baseline, it is 36px (4px*9)
 // For default breakpoints it is 1188px (1260 - 36 - 36)
 .o-container--large {
   max-width: calc(map.get(t.$mq-breakpoints, l-desktop) - t.spacing(xlarge) * 2);
 }
 
 // Restricts content to the content size of the: wide
-// The margins are set at spacing(xlarge). For default baseline it is 36px (4px*9)
+// The margins are set at spacing(xlarge). For default baseline, it is 36px (4px*9)
 // For default breakpoints it is 1360px (1432 - 36 - 36)
 .o-container--xlarge {
   max-width: calc(map.get(t.$mq-breakpoints, wide) - t.spacing(xlarge) * 2);
 }
 
 // Restricts content to the content size of the: l-wide
-// The margins are set at spacing(xlarge). For default baseline it is 36px (4px*9)
+// The margins are set at spacing(xlarge). For default baseline, it is 36px (4px*9)
 // For default breakpoints it is 1532px (1604 - 36 - 36)
 .o-container--full {
   max-width: calc(map.get(t.$mq-breakpoints, l-wide) - t.spacing(xlarge) * 2);

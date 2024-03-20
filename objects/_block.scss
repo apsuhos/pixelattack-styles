@@ -1,15 +1,10 @@
-/* ==========================================================================
-   #BLOCK
-   ========================================================================== */
+/* #BLOCK */
 
 @use '../tools/' as t;
 
 .o-block {
   --block-padding: #{t.rem(t.spacing(xlarge))};
-}
 
-/* stylelint-disable-next-line no-duplicate-selectors */
-.o-block {
   padding-block: var(--block-padding);
 
   @include t.mq($from: l-tablet) {

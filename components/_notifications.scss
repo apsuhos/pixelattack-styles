@@ -1,16 +1,26 @@
-/* ==========================================================================
-   #NOTIFICATIONS
-   ========================================================================== */
+/* #NOTIFICATIONS */
 
 @use '../tools/' as t;
-
-/* stylelint-disable max-nesting-depth */
 
 .c-notification {
   --notification-padding: #{t.rem(t.spacing(base))};
   --notification-border-width: var(--global-border-width);
   --notification-border-style: var(--global-border-style);
   --notification-border-radius: var(--radius);
+
+  background-color: var(--notification-background-color);
+  border-color: var(--notification-border-color);
+  border-radius: var(--notification-border-radius);
+  border-style: var(--notification-border-style);
+  border-width: var(--notification-border-width);
+  color: var(--notification-color);
+  padding: var(--notification-padding);
+
+  > * {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .c-notification--error {
@@ -56,24 +66,6 @@
 
 .c-notification--large {
   --notification-padding: #{t.rem(t.spacing(large))};
-}
-
-/* stylelint-disable no-duplicate-selectors */
-
-.c-notification {
-  background-color: var(--notification-background-color);
-  border-color: var(--notification-border-color);
-  border-radius: var(--notification-border-radius);
-  border-style: var(--notification-border-style);
-  border-width: var(--notification-border-width);
-  color: var(--notification-color);
-  padding: var(--notification-padding);
-
-  > * {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .c-notification__body a {

@@ -1,6 +1,6 @@
-/* ==========================================================================
-   #FONT SIZE UTIL
-   ========================================================================== */
+/* #FONT SIZE UTIL */
+
+/* stylelint-disable max-nesting-depth */
 
 @use 'sass:map';
 @use '../../settings' as s;
@@ -66,7 +66,11 @@ $sizes: ('xsmall', 'small', 'base', 'large', 'xlarge');
 }
 
 /*
+
 <p class="[ u-text-base ]">This will naturally increase in size without explicitly assigning media queries.</p>
 <p class="[ u-text-small ]">This will naturally increase in size without explicitly assigning media queries.</p>
 <p class="[ u-text-xsmall u-text-xlarge@tablet u-text-xsmall@desktop ]">This starts as xsmall, but it is explicitly assigned the xlarge font size utility @tablet and then the xsmall @desktop</p>
+
 */
+
+/* stylelint-enable max-nesting-depth */

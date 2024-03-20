@@ -1,6 +1,6 @@
-/*  ==========================================================================
-    #MEDIA
-    ========================================================================== */
+/* #MEDIA */
+
+/* stylelint-disable no-descending-specificity, max-nesting-depth */
 
 @use '../tools/' as t;
 
@@ -13,9 +13,6 @@ $media-huge-spacing: t.rem(t.spacing(huge)) !default;
 $media-xhuge-spacing: t.rem(t.spacing(xhuge)) !default;
 $media-enormous-spacing: t.rem(t.spacing(enormous)) !default;
 $media-xenormous-spacing: t.rem(t.spacing(xenormous)) !default;
-
-/* stylelint-disable no-descending-specificity */
-/* stylelint-disable max-nesting-depth */
 
 .o-media {
   display: flex;
@@ -34,9 +31,6 @@ $media-xenormous-spacing: t.rem(t.spacing(xenormous)) !default;
   }
 }
 
-/*  Vertical alignment modifiers.
-    ========================================================================== */
-
 .o-media--middle {
   align-items: center;
 }
@@ -44,14 +38,6 @@ $media-xenormous-spacing: t.rem(t.spacing(xenormous)) !default;
 .o-media--bottom {
   align-items: flex-end;
 }
-
-/* Size variants
-  ========================================================================== */
-
-/**
-* Modify the amount of space between our image and our text. We also have
-* reversible options for all available sizes.
-*/
 
 .o-media--flush {
   > .o-media__img {
@@ -163,9 +149,6 @@ $media-xenormous-spacing: t.rem(t.spacing(xenormous)) !default;
     }
   }
 }
-
-/* Reversed media objects
-  ========================================================================== */
 
 .o-media--reverse {
   > .o-media__img {

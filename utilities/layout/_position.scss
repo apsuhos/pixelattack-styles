@@ -1,12 +1,4 @@
-/* ==========================================================================
-   #POSITION
-   ========================================================================== */
-
-/*
-https://codepen.io/apsuhos/pen/yLjWyjY
-
-https://tinyurl.com/2p9bjern --> How to Fix Issues With CSS Position Sticky Not Working?
-*/
+/* #POSITION */
 
 @use 'sass:map';
 @use '../../tools/' as t;
@@ -26,3 +18,9 @@ $position: (
 
 @include t.generate-classes($position);
 @include t.generate-responsive-classes($position);
+
+/*
+https://codepen.io/apsuhos/pen/yLjWyjY
+
+https://tinyurl.com/2p9bjern --> How to Fix Issues With CSS Position Sticky Not Working?
+*/

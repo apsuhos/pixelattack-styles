@@ -15,9 +15,9 @@
     "test": "echo \"No test specified\"",
     "lint:check": "stylelint \"**/*.scss\"",
     "lint": "stylelint \"**/*.scss\" --fix",
-    "format:check": "prettier --check \"**/*.{scss,css}\"",
-    "format": "prettier --write \"**/*.{scss,css}\"",
-    "prepare": "husky install"
+    "format:check": "prettier --check \"**/*.{scss,json}\"",
+    "format": "prettier --write \"**/*.{scss,json}\"",
+    "prepare": "husky"
   },
   "lint-staged": {
     "**/*.{css,scss}": "npm run lint && npm run format"
@@ -28,7 +28,7 @@
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.2",
+    "husky": "^9.0.11",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
     "stylelint": "^14.14.1",

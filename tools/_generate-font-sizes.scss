@@ -1,30 +1,6 @@
-/* ==========================================================================
-   #GENERATE FONT SIZES
-   ========================================================================== */
+/* #GENERATE FONT SIZES */
 
-/*
-  * The `t.font-size` mixin exclusively accepts pixel values to generate both font size and line height.
-  * 
-  * Conversely, the `typeSize` mixin accepts a predefined set of values [xsmall, small, base, large, xlarge], 
-  * generating font sizes and line heights accordingly. (it uses the `t.font-size` mixin)
-  *
-  * When responsive mode is enabled, it automatically produces responsive variants.
-  *
-  * This mixin was designed for consistency with named values (such as xsmall, large, etc.) rather than hardcoding specific values.
-
-  * Usage example:
-  *
-  * .test {
-  *    @include t.typeSize(small);
-  *  }
-  * 
-  * which generates:
-  *
-  * .test {
-  *     font-size: 0.8333333125rem;
-  *     line-height: 1.5000000375;
-  *  }
-  */
+/* stylelint-disable scss/at-mixin-pattern */
 
 @use 'sass:meta';
 @use 'sass:map';
@@ -33,8 +9,6 @@
 @use '../tools/font-size' as fs;
 
 $allowed-sizes: (xsmall, small, base, large, xlarge);
-
-/* stylelint-disable scss/at-mixin-pattern */
 
 @mixin typeSize($font-size) {
   @if index($allowed-sizes, $font-size) {
@@ -61,3 +35,29 @@ $allowed-sizes: (xsmall, small, base, large, xlarge);
     }
   }
 }
+
+/*
+  * The `t.font-size` mixin exclusively accepts pixel values to generate both font size and line height.
+  * 
+  * Conversely, the `typeSize` mixin accepts a predefined set of values [xsmall, small, base, large, xlarge], 
+  * generating font sizes and line heights accordingly. (it uses the `t.font-size` mixin)
+  *
+  * When responsive mode is enabled, it automatically produces responsive variants.
+  *
+  * This mixin was designed for consistency with named values (such as xsmall, large, etc.) rather than hardcoding specific values.
+
+  * Usage example:
+  *
+  * .test {
+  *    @include t.typeSize(small);
+  *  }
+  * 
+  * which generates:
+  *
+  * .test {
+  *     font-size: 0.8333333125rem;
+  *     line-height: 1.5000000375;
+  *  }
+  */
+
+/* stylelint-enable scss/at-mixin-pattern */

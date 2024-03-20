@@ -1,6 +1,4 @@
-/* ==========================================================================
-   #PAGE
-   ========================================================================== */
+/* #PAGE */
 
 @use 'sass:math';
 @use 'sass:map';
@@ -48,6 +46,13 @@ html {
   }
 }
 
+@if config(env) == prod {
+  body::before {
+    display: none;
+  }
+}
+
+/* stylelint-disable max-nesting-depth */
 @if s.config(themes) {
   @each $theme, $colors in s.$theme-colors {
     body {
@@ -59,6 +64,7 @@ html {
     }
   }
 }
+/* stylelint-enable max-nesting-depth */
 
 /* prettier-ignore */
 body {
@@ -94,14 +100,14 @@ body {
   --surface-warning:  var(--warning-010); // Warning surface
   --surface-success:  var(--success-010); // Success surface
   --surface-info:     var(--info-010);    // Info surface
-  --text-error:   var(--error-030);   // Error text
-  --text-warning: var(--warning-030); // Warning text
-  --text-success: var(--success-030); // Success text
-  --text-info:    var(--info-030);    // Info text
-  --border-error:   var(--error-020);   // Error border
-  --border-warning: var(--warning-020); // Warning border
-  --border-success: var(--success-020); // Success border
-  --border-info:    var(--info-020);    // Info border
+  --text-error:       var(--error-030);   // Error text
+  --text-warning:     var(--warning-030); // Warning text
+  --text-success:     var(--success-030); // Success text
+  --text-info:        var(--info-030);    // Info text
+  --border-error:     var(--error-020);   // Error border
+  --border-warning:   var(--warning-020); // Warning border
+  --border-success:   var(--success-020); // Success border
+  --border-info:      var(--info-020);    // Info border
 
   @include t.dark-mode {
     // Surfaces
@@ -131,24 +137,22 @@ body {
 
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 body {
   --body-background-color: var(--surface-base);
   --body-text-color: var(--text-primary-dark);
 
+  @include t.typeSize(base);
+
   background-color: var(--body-background-color);
   color: var(--body-text-color);
   font-family: var(--global-system-fonts);
-  /* stylelint-disable font-family-no-missing-generic-family-keyword */
-  @if s.config(custom-fonts) {
-    font-family: CeraPro;
-  }
-  /* stylelint-enable font-family-no-missing-generic-family-keyword */
-  /* stylelint-disable-next-line order/order */
-  @include t.typeSize(base);
-
-  font-style: normal;
-  font-weight: 400;
-  /* stylelint-disable-next-line order/properties-alphabetical-order */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: 400;
+
+  @if s.config(custom-fonts) {
+    font-family: CeraPro, var(--global-system-fonts);
+  }
 }

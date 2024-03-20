@@ -1,6 +1,6 @@
-/* ==========================================================================
-   #PLACE
-   ========================================================================== */
+/* #PLACE */
+
+/* stylelint-disable max-nesting-depth */
 
 @use '../../tools/mq' as mq;
 @use 'sass:math';
@@ -132,3 +132,5 @@ $place-properties: (
 </div>
 
 */
+
+/* stylelint-enable max-nesting-depth */

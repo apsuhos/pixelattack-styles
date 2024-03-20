@@ -1,13 +1,4 @@
-/* ==========================================================================
-   #SPACING
-   ========================================================================== */
-
-// Function to assign spacings to elements.
-// .usage {
-//   margin-bottom: spacing(large);
-// }
-// Possible arguments for the function are defined in the
-// `$global-spacings` map in `_settings.core.scss`.
+/* #SPACING */
 
 @use 'sass:map';
 @use '../settings/core.scss' as c;
@@ -21,3 +12,16 @@
 
   @return $_factor * c.$global-baseline;
 }
+
+/*
+
+Function to assign spacings to elements.
+
+.usage {
+  margin-bottom: spacing(large);
+}
+
+Possible arguments for the function are defined in the
+`$global-spacings` map in `_settings.core.scss`.
+
+*/

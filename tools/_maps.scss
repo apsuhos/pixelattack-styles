@@ -1,9 +1,4 @@
-/* ==========================================================================
-   #MAPS
-   ========================================================================== */
-
-// Since the builtin map-merge function in Sass only take 2 arguments, it can only merge 2 maps at a time.
-// The map-collect function below allows you to combine multiple maps together in a cleaner way.
+/* #MAPS */
 
 @use 'sass:map';
 
@@ -18,6 +13,10 @@
 }
 
 /*
+
+Since the builtin map-merge function in Sass only take 2 arguments, it can only merge 2 maps at a time.
+The map-collect function below allows you to combine multiple maps together in a cleaner way.
+
 Set up some maps
 
 $reds: ( red: #CE2F3F, maroon: #931638, pink: #E28190 );

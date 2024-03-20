@@ -1,6 +1,4 @@
-/*  ===========================================================================
-    #LINKS
-=============================================================================== */
+/* #LINKS */
 
 @use '../tools/' as t;
 
@@ -13,22 +11,6 @@ a {
   --link-transition-duration: var(--global-transition-duration);
   --link-transition-timing-function: var(--global-transition-timing-function);
 
-  &:hover,
-  &:focus-visible {
-    --link-color: var(--text-secondary-dark);
-    --link-text-decoration-thickness: #{t.rem(2px)};
-  }
-
-  &:focus-visible {
-    --link-text-decoration-line: none;
-    --link-outline-color: var(--outline-secondary-dark);
-    --link-outline-style: var(--global-outline-style);
-    --link-outline-width: var(--global-outline-width);
-    --link-outline-offset: var(--global-outline-offset);
-  }
-}
-
-a {
   color: var(--link-color);
   text-decoration: var(--link-text-decoration-line);
   text-decoration-color: var(--link-text-decoration-color);
@@ -40,10 +22,19 @@ a {
 
   &:hover,
   &:focus-visible {
+    --link-color: var(--text-secondary-dark);
+    --link-text-decoration-thickness: #{t.rem(2px)};
+
     text-decoration-thickness: var(--link-text-decoration-thickness);
   }
 
   &:focus-visible {
+    --link-text-decoration-line: none;
+    --link-outline-color: var(--outline-secondary-dark);
+    --link-outline-style: var(--global-outline-style);
+    --link-outline-width: var(--global-outline-width);
+    --link-outline-offset: var(--global-outline-offset);
+
     outline: var(--link-outline-color) var(--link-outline-style) var(--link-outline-width);
     outline-offset: var(--link-outline-offset);
   }

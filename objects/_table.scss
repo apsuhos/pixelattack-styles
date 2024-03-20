@@ -1,6 +1,4 @@
-/* ==========================================================================
-   #TABLE
-   ========================================================================== */
+/* #TABLE */
 
 @use '../tools/' as t;
 
@@ -23,23 +21,10 @@ $table-xenormous-cell-padding: t.rem(t.spacing(xenormous)) !default;
   }
 }
 
-/*  Equal-width table cells
-    ========================================================================== */
-
-/**
-* `table-layout: fixed` forces all cells within a table to occupy the same
-* width as each other. This also has performance benefits: because the browser
-* does not need to (re)calculate cell dimensions based on content it discovers,
-* the table can be rendered very quickly. Further reading:
-* https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout#Values
-*/
-
+// Equal-width table cells
 .o-table--fixed {
   table-layout: fixed;
 }
-
-/*  Size variants
-    ========================================================================== */
 
 .o-table--xsmall {
   th,

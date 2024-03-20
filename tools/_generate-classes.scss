@@ -1,6 +1,6 @@
-/* ==========================================================================
-   #GENERATE CLASSES
-   ========================================================================== */
+/* #GENERATE CLASSES */
+
+/* stylelint-disable */
 
 @use 'sass:map';
 @use 'sass:math';
@@ -725,66 +725,4 @@ if not it just bypasses them.
   }
 }
 
-// @mixin generate-hover-notification-color-rules($map) {
-//   @each $property-namespace, $property in map.get($map, "properties") {
-//     @each $value-namespace, $value in map.get($map, "notifications") {
-//       @for $numerator from 1 through 3 {
-//         .hover\:u#{$property-namespace}#{$value-namespace}-0#{$numerator}0:hover {
-//           #{$property}: var(#{$value}-0#{$numerator}0) !important;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @mixin generate-hover-brand-color-rules($map) {
-//   @each $property-namespace, $property in map.get($map, "properties") {
-//     @each $value-namespace, $value in map.get($map, "brand") {
-//       @for $numerator from 1 through 10 {
-//         @if $numerator < 10 {
-//           .hover\:u#{$property-namespace}#{$value-namespace}-0#{$numerator}0:hover {
-//             #{$property}: var(#{$value}-0#{$numerator}0) !important;
-//           }
-//         }
-
-//         @if $numerator == 10 {
-//           .hover\:u#{$property-namespace}#{$value-namespace}-#{$numerator}0:hover {
-//             #{$property}: var(#{$value}-#{$numerator}0) !important;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @mixin generate-notification-color-rules($map) {
-//   @each $property-namespace, $property in map.get($map, "properties") {
-//     @each $value-namespace, $value in map.get($map, "notifications") {
-//       @for $numerator from 1 through 3 {
-//         .u#{$property-namespace}#{$value-namespace}-0#{$numerator}0 {
-//           #{$property}: var(#{$value}-0#{$numerator}0) !important;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @mixin generate-brand-color-rules($map) {
-//   @each $property-namespace, $property in map.get($map, "properties") {
-//     @each $value-namespace, $value in map.get($map, "brand") {
-//       @for $numerator from 1 through 10 {
-//         @if $numerator < 10 {
-//           .u#{$property-namespace}#{$value-namespace}-0#{$numerator}0 {
-//             #{$property}: var(#{$value}-0#{$numerator}0) !important;
-//           }
-//         }
-
-//         @if $numerator == 10 {
-//           .u#{$property-namespace}#{$value-namespace}-#{$numerator}0 {
-//             #{$property}: var(#{$value}-#{$numerator}0) !important;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+/* stylelint-enable */

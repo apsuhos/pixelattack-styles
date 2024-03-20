@@ -1,18 +1,8 @@
-/* ==========================================================================
-   #RESET
-   ========================================================================== */
-
-/**
- * Add the correct display in IE.
- */
+/* #RESET */
 
 main {
   display: block;
 }
-
-/**
-   * Removes the default spacing and border for appropriate elements.
-   */
 
 blockquote,
 dd,
@@ -36,25 +26,15 @@ button {
   padding: 0;
 }
 
-/**
-   * Work around a Firefox/IE bug where the transparent `button` background
-   * results in a loss of the default `button` focus styles.
-   */
-
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/**
-   * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
-   *    on fieldsets.
-   */
-
 fieldset {
   border: 0;
   margin: 0;
-  min-width: 0; /* [1] */
+  min-width: 0;
   padding: 0;
 }
 
@@ -64,10 +44,6 @@ ul {
   padding-left: 0;
 }
 
-/**
-   * Remove trailing margins from nested lists.
-   */
-
 li > {
   ol,
   ul {
@@ -75,17 +51,9 @@ li > {
   }
 }
 
-/**
-   * Prevent double borders.
-   */
-
 table {
   border-collapse: collapse;
 }
-
-/**
-   * Allow only vertical resizing of textareas.
-   */
 
 textarea {
   resize: vertical;

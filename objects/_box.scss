@@ -1,6 +1,4 @@
-/* ==========================================================================
-   #BOX
-   ========================================================================== */
+/* #BOX */
 
 @use '../tools/' as t;
 
@@ -21,15 +19,11 @@ $box-xenormous-padding: t.rem(t.spacing(xenormous)) !default;
   padding: $box-padding;
 
   > * {
-    /* stylelint-disable-next-line max-nesting-depth */
     &:last-child {
       margin-bottom: 0;
     }
   }
 }
-
-/*  Size variants
-    ========================================================================== */
 
 .o-box--flush {
   padding: 0;

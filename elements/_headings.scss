@@ -1,6 +1,4 @@
-/* ===========================================================================
-   #HEADINGS
-   =========================================================================== */
+/* #HEADINGS */
 
 @use 'sass:map';
 @use '../tools/' as t;
@@ -16,12 +14,11 @@ h6 {
 
   color: var(--headings-color);
   font-family: var(--global-system-fonts);
-  /* stylelint-enable font-family-no-missing-generic-family-keyword */
   font-style: normal;
   font-weight: 700;
-  /* stylelint-disable font-family-no-missing-generic-family-keyword */
+
   @if s.config(custom-fonts) {
-    font-family: CeraPro;
+    font-family: CeraPro, var(--global-system-fonts);
   }
 }
 
