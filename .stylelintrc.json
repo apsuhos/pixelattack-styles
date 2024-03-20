@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "max-line-length": null,
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute"]
+      }
+    ],
+    "no-duplicate-selectors": [true, { "disallowInList": false }],
+    "no-descending-specificity": [
+      true,
+      {
+        "ignore": ["selectors-within-list"]
+      }
+    ],
+    "max-nesting-depth": [
+      1,
+      {
+        "ignore": ["pseudo-classes"]
+      }
+    ]
+  }
+}
