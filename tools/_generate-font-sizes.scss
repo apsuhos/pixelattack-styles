@@ -1,6 +1,6 @@
 /* #GENERATE FONT SIZES */
 
-/* stylelint-disable scss/at-mixin-pattern */
+/* stylelint-disable scss/at-mixin-pattern, max-nesting-depth */
 
 @use 'sass:meta';
 @use 'sass:map';
@@ -12,27 +12,25 @@ $allowed-sizes: (xsmall, small, base, large, xlarge);
 
 @mixin typeSize($font-size) {
   @if index($allowed-sizes, $font-size) {
-    font-size: $font-size;
+    $mobile-font-size: map.get(s.$typography, 'mobile', $font-size, 'font-size');
+    $tablet-font-size: map.get(s.$typography, 'tablet', $font-size, 'font-size');
+    $desktop-font-size: map.get(s.$typography, 'desktop', $font-size, 'font-size');
+    $mobile-modifier: map.get(s.$typography, 'mobile', $font-size, 'modifier');
+    $tablet-modifier: map.get(s.$typography, 'tablet', $font-size, 'modifier');
+    $desktop-modifier: map.get(s.$typography, 'desktop', $font-size, 'modifier');
+
+    @include fs.font-size($mobile-font-size, $modifier: $mobile-modifier);
+
+    @if s.config(responsive-type) == true {
+      @include mq.mq($from: tablet) {
+        @include fs.font-size($tablet-font-size, $modifier: $tablet-modifier);
+      }
+      @include mq.mq($from: desktop) {
+        @include fs.font-size($desktop-font-size, $modifier: $desktop-modifier);
+      }
+    }
   } @else {
     @error "Invalid size value: #{$font-size}. Must be xsmall, small, base, large, or xlarge.";
-  }
-
-  $mobile-font-size: map.get(s.$typography, 'mobile', $font-size, 'font-size');
-  $tablet-font-size: map.get(s.$typography, 'tablet', $font-size, 'font-size');
-  $desktop-font-size: map.get(s.$typography, 'desktop', $font-size, 'font-size');
-  $mobile-modifier: map.get(s.$typography, 'mobile', $font-size, 'modifier');
-  $tablet-modifier: map.get(s.$typography, 'tablet', $font-size, 'modifier');
-  $desktop-modifier: map.get(s.$typography, 'desktop', $font-size, 'modifier');
-
-  @include fs.font-size($mobile-font-size, $modifier: $mobile-modifier);
-
-  @if s.config(responsive-type) == true {
-    @include mq.mq($from: tablet) {
-      @include fs.font-size($tablet-font-size, $modifier: $tablet-modifier);
-    }
-    @include mq.mq($from: desktop) {
-      @include fs.font-size($desktop-font-size, $modifier: $desktop-modifier);
-    }
   }
 }
 
@@ -60,4 +58,4 @@ $allowed-sizes: (xsmall, small, base, large, xlarge);
   *  }
   */
 
-/* stylelint-enable scss/at-mixin-pattern */
+/* stylelint-enable scss/at-mixin-pattern, max-nesting-depth */
