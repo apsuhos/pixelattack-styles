@@ -25,16 +25,15 @@
   "author": "Konstantinos Antoniadis",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.0.11",
-    "lint-staged": "^13.0.3",
-    "prettier": "2.7.1",
-    "stylelint": "^14.14.1",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-sass-guidelines": "^9.0.1",
-    "stylelint-config-standard-scss": "^6.1.0"
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "stylelint": "^16.3.1",
+    "stylelint-config-sass-guidelines": "^11.1.0",
+    "stylelint-config-standard-scss": "^13.0.0"
   },
   "config": {
     "commitizen": {
