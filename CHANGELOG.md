@@ -1,3 +1,9 @@
+## [1.0.5] - 26-04-2024
+
+- refactors ignore files
+- updates packages to their latest versions
+- removes stylelint-config-prettier
+
 ## [1.0.4] - 26-04-2024
 
 - removes custom fonts support
