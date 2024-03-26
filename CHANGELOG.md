@@ -1,3 +1,7 @@
+## [1.0.4] - 26-04-2024
+
+- removes custom fonts support
+
 ## [1.0.3] - 20-04-2024
 
 - fixes a bug that generates invalid font size value
