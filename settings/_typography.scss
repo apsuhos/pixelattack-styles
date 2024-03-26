@@ -1,25 +1,6 @@
 /* #TYPOGRAPHY */
 
 @use 'sass:map';
-@use '../settings/config' as s;
-
-@if s.config(custom-fonts) {
-  @font-face {
-    font-display: swap;
-    font-family: CeraPro;
-    font-style: normal;
-    font-weight: 400;
-    src: local(''), url('../fonts/cera-pro/cera-pro-regular.otf') format('opentype');
-  }
-
-  @font-face {
-    font-display: swap;
-    font-family: CeraPro;
-    font-style: normal;
-    font-weight: 700;
-    src: local(''), url('../fonts/cera-pro/cera-pro-bold.otf') format('opentype');
-  }
-}
 
 $typography: (
   'mobile': (

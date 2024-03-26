@@ -151,8 +151,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-weight: 400;
-
-  @if s.config(custom-fonts) {
-    font-family: CeraPro, var(--global-system-fonts);
-  }
 }

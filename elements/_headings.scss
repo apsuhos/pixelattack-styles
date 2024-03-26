@@ -16,10 +16,6 @@ h6 {
   font-family: var(--global-system-fonts);
   font-style: normal;
   font-weight: 700;
-
-  @if s.config(custom-fonts) {
-    font-family: CeraPro, var(--global-system-fonts);
-  }
 }
 
 $mobile-headings: map.get(s.$headings, 'mobile');
