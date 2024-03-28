@@ -30,12 +30,10 @@ $colors: map.merge($colors, 'context-colors', s.$context-colors);
 @include t.generate-theme-color-rules($colors);
 @include t.generate-neutral-color-rules($colors);
 @include t.generate-context-color-rules($colors);
-
 @include t.generate-hover-keyword-color-rules($colors);
 @include t.generate-hover-theme-color-rules($colors);
 @include t.generate-hover-neutral-color-rules($colors);
 @include t.generate-hover-context-color-rules($colors);
-
 @include t.generate-focus-keyword-color-rules($colors);
 @include t.generate-focus-theme-color-rules($colors);
 @include t.generate-focus-neutral-color-rules($colors);
@@ -46,11 +44,9 @@ $colors: map.merge($colors, 'context-colors', s.$context-colors);
   @include t.generate-color-scheme-theme-color-rules($colors);
   @include t.generate-color-scheme-neutral-color-rules($colors);
   @include t.generate-color-scheme-context-color-rules($colors);
-
   @include t.generate-hover-color-scheme-theme-color-rules($colors);
   @include t.generate-hover-color-scheme-neutral-color-rules($colors);
   @include t.generate-hover-color-scheme-context-color-rules($colors);
-
   @include t.generate-focus-color-scheme-theme-color-rules($colors);
   @include t.generate-focus-color-scheme-neutral-color-rules($colors);
   @include t.generate-focus-color-scheme-context-color-rules($colors);

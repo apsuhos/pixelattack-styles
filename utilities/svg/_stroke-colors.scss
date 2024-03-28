@@ -36,12 +36,10 @@ $stroke-colors: map.merge($stroke-colors, 'context-colors', s.$context-colors);
 @include t.generate-theme-color-rules($stroke-colors);
 @include t.generate-neutral-color-rules($stroke-colors);
 @include t.generate-context-color-rules($stroke-colors);
-
 @include t.generate-hover-keyword-color-rules($stroke-colors);
 @include t.generate-hover-theme-color-rules($stroke-colors);
 @include t.generate-hover-neutral-color-rules($stroke-colors);
 @include t.generate-hover-context-color-rules($stroke-colors);
-
 @include t.generate-focus-keyword-color-rules($stroke-colors);
 @include t.generate-focus-theme-color-rules($stroke-colors);
 @include t.generate-focus-neutral-color-rules($stroke-colors);
@@ -52,11 +50,9 @@ $stroke-colors: map.merge($stroke-colors, 'context-colors', s.$context-colors);
   @include t.generate-color-scheme-theme-color-rules($stroke-colors);
   @include t.generate-color-scheme-neutral-color-rules($stroke-colors);
   @include t.generate-color-scheme-context-color-rules($stroke-colors);
-
   @include t.generate-hover-color-scheme-theme-color-rules($stroke-colors);
   @include t.generate-hover-color-scheme-neutral-color-rules($stroke-colors);
   @include t.generate-hover-color-scheme-context-color-rules($stroke-colors);
-
   @include t.generate-focus-color-scheme-theme-color-rules($stroke-colors);
   @include t.generate-focus-color-scheme-neutral-color-rules($stroke-colors);
   @include t.generate-focus-color-scheme-context-color-rules($stroke-colors);
