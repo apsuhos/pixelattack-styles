@@ -33,12 +33,10 @@ $text-decoration-colors: map.merge($text-decoration-colors, 'context-colors', s.
 @include t.generate-theme-color-rules($text-decoration-colors);
 @include t.generate-neutral-color-rules($text-decoration-colors);
 @include t.generate-context-color-rules($text-decoration-colors);
-
 @include t.generate-hover-keyword-color-rules($text-decoration-colors);
 @include t.generate-hover-theme-color-rules($text-decoration-colors);
 @include t.generate-hover-neutral-color-rules($text-decoration-colors);
 @include t.generate-hover-context-color-rules($text-decoration-colors);
-
 @include t.generate-focus-keyword-color-rules($text-decoration-colors);
 @include t.generate-focus-theme-color-rules($text-decoration-colors);
 @include t.generate-focus-neutral-color-rules($text-decoration-colors);
@@ -49,11 +47,9 @@ $text-decoration-colors: map.merge($text-decoration-colors, 'context-colors', s.
   @include t.generate-color-scheme-theme-color-rules($text-decoration-colors);
   @include t.generate-color-scheme-neutral-color-rules($text-decoration-colors);
   @include t.generate-color-scheme-context-color-rules($text-decoration-colors);
-
   @include t.generate-hover-color-scheme-theme-color-rules($text-decoration-colors);
   @include t.generate-hover-color-scheme-neutral-color-rules($text-decoration-colors);
   @include t.generate-hover-color-scheme-context-color-rules($text-decoration-colors);
-
   @include t.generate-focus-color-scheme-theme-color-rules($text-decoration-colors);
   @include t.generate-focus-color-scheme-neutral-color-rules($text-decoration-colors);
   @include t.generate-focus-color-scheme-context-color-rules($text-decoration-colors);

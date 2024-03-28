@@ -25,6 +25,7 @@ $allowed-sizes: (xsmall, small, base, large, xlarge);
       @include mq.mq($from: tablet) {
         @include fs.font-size($tablet-font-size, $modifier: $tablet-modifier);
       }
+
       @include mq.mq($from: desktop) {
         @include fs.font-size($desktop-font-size, $modifier: $desktop-modifier);
       }
