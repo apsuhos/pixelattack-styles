@@ -37,12 +37,10 @@ $border-colors: map.merge($border-colors, 'context-colors', s.$context-colors);
 @include t.generate-theme-color-rules($border-colors);
 @include t.generate-neutral-color-rules($border-colors);
 @include t.generate-context-color-rules($border-colors);
-
 @include t.generate-hover-keyword-color-rules($border-colors);
 @include t.generate-hover-theme-color-rules($border-colors);
 @include t.generate-hover-neutral-color-rules($border-colors);
 @include t.generate-hover-context-color-rules($border-colors);
-
 @include t.generate-focus-keyword-color-rules($border-colors);
 @include t.generate-focus-theme-color-rules($border-colors);
 @include t.generate-focus-neutral-color-rules($border-colors);
@@ -53,11 +51,9 @@ $border-colors: map.merge($border-colors, 'context-colors', s.$context-colors);
   @include t.generate-color-scheme-theme-color-rules($border-colors);
   @include t.generate-color-scheme-neutral-color-rules($border-colors);
   @include t.generate-color-scheme-context-color-rules($border-colors);
-
   @include t.generate-hover-color-scheme-theme-color-rules($border-colors);
   @include t.generate-hover-color-scheme-neutral-color-rules($border-colors);
   @include t.generate-hover-color-scheme-context-color-rules($border-colors);
-
   @include t.generate-focus-color-scheme-theme-color-rules($border-colors);
   @include t.generate-focus-color-scheme-neutral-color-rules($border-colors);
   @include t.generate-focus-color-scheme-context-color-rules($border-colors);

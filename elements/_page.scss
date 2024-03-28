@@ -46,12 +46,6 @@ html {
   }
 }
 
-@if config(env) == prod {
-  body::before {
-    display: none;
-  }
-}
-
 /* stylelint-disable max-nesting-depth */
 @if s.config(themes) {
   @each $theme, $colors in s.$theme-colors {
