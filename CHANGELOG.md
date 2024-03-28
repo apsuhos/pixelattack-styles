@@ -1,3 +1,10 @@
+## [1.0.6] - 28-04-2024
+
+- fix: fixes a bug where env:prod was not passed
+- refactor: refactors .prettierignore and stylelintignore
+- style: formatting scss files
+- chore: adds .editorconfig file
+
 ## [1.0.5] - 26-04-2024
 
 - refactors ignore files
