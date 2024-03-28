@@ -14,3 +14,9 @@ $config: (
 @function config($key) {
   @return map.get($config, $key);
 }
+
+@if config(env) == prod {
+  body::before {
+    display: none;
+  }
+}
